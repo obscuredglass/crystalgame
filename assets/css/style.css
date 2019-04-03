@@ -1,7 +1,23 @@
+* {
+  text-align: center;
+}
+
 body {
   background-image: url("../images/crystalcave2.jpg");
   /* background-repeat: no-repeat;
   background-size: auto; */
   color: white;
+}
+
+.header {
+  font-family: 'Righteous', cursive;
+  margin-top: 30px;
+  font-size: 50px;
+}
+
+.instructions {
+  font-family: 'Maven Pro', sans-serif;
+  margin-top: 15px;
+  font-size: 20px;
 }
 
