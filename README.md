@@ -8,4 +8,4 @@ Rules:
 4. The value of each crystal is hidden from you until you click your mouse on it.
 5. Each time when the game starts, the game will reset the values of each crystal to a completely different number.
 
-![screenshot](/assets/images/screenshotofwebsite.png)
+![screenshot](/assets/images/screenshotofwebsite2.png)

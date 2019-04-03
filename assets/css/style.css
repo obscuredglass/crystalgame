@@ -8,6 +8,18 @@ body {
   
 }
 
+#blue {
+  color: #80b3ff;
+}
+#green {
+  color: #80ff80;
+}
+#red {
+  color: #ff4d4d;
+}
+#yellow {
+  color: #ffff66;
+}
 
 
 .header {
@@ -27,6 +39,12 @@ body {
   margin-top: 15px;
   font-size: 35px
 
+}
+
+.gamerTotal {
+  font-family: 'Righteous', cursive;
+  margin-top: 15px;
+  font-size: 30px;
 }
 
  
