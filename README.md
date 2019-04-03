@@ -9,9 +9,9 @@ Rules:
 5. Each time when the game starts, the game will reset the values of each crystal to a completely different number.
 
 ## Technologies used:
-HTML
-CSS
-JavaScript
-JQuery
+- HTML
+- CSS
+- JavaScript
+- JQuery
 
 ![screenshot](/assets/images/screenshotofwebsite2.png)
