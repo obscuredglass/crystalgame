@@ -4,10 +4,11 @@
 
 body {
   background-image: url("../images/crystalcave2.jpg");
-  /* background-repeat: no-repeat;
-  background-size: auto; */
   color: white;
+  
 }
+
+
 
 .header {
   font-family: 'Righteous', cursive;
@@ -21,3 +22,11 @@ body {
   font-size: 20px;
 }
 
+.numberToGet, .winsAndLosses {
+  font-family: 'ABeeZee', sans-serif;
+  margin-top: 15px;
+  font-size: 35px
+
+}
+
+ 

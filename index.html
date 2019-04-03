@@ -3,34 +3,37 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Crystal Collector</title>
+	<title>Crystal Selector</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link href="https://fonts.googleapis.com/css?family=ABeeZee|Maven+Pro|Righteous|Rokkitt" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
+
+	
 	<div class="header">
 		<h1>The Crystal Selector and Collector</h1>
 	</div>
 	<div class="instructions">
-		<h3>Here's how you play the game</h3>
+		<h3>Here's how you play</h3>
 		</br>
 		<ol>
 			<li>You will be given a random number at the start of the game.<span>"Number To Get"</span></li>
-			<li>There are four crystals below.</li>
+			<li>There are four colorful crystals below to choose from.</li>
 			<ul>
 				<li id="blue">Sapphire</li>
 				<li id="green">Emerald</li>
 				<li id="red">Ruby</li>
 				<li id="yellow">Amber</li>
 			</ul>
-			<li>By clicking on a crystal, you will add a specific amount of points to your total score.</li>
-			<li>You win the game by matching your total score to the random number.</li>
+			<li>By clicking on a crystal, you will add a certain amount of points added to your total score.</li>
+			<li>You win the game by exactly matching your total score to the random number given to you.</li>
 			<li>You lose the game if your total score goes above the random number.</li>
-			<li>The value of each crystal is hidden from you until you click on it.</li>
-			<li>Each time when the game starts, the game will change the values of each crystal.</li>
+			<li>The value of each crystal is hidden from you until you click your mouse on it.</li>
+			<li>Each time when the game starts, the game will reset the values of each crystal to a completely different number.</li>
 		</ol>
 	</div>
-	<div class="numberToMatch">
+	<div class="numberToGet">
 		<h2>Number To Get:
 			<span id= "randomNum"></span>
 		</h2>
@@ -49,11 +52,12 @@
 		<img src="assets/images/ruby.png" class=gemImage id="crystThree" alt="Red Gem" style="width:300px;height:300px;">
 		<img src="assets/images/amber.png" class=gemImage id="crystFour" alt="Yellow Gem" style="width:300px;height:300px;">
 	</div>
-	<div class="userTotal">
+	<div class="gamerTotal">
 		<h2>Your total score is:
 			<span id="finalTotal"></span>
 		</h2>
 	</div>
+
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
 	<script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>

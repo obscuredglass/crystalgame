@@ -1,26 +1,27 @@
-  // Selects a random number to be shown at the start of the game and the number should be should be between 19 - 120
-  //
+  // This selecs the randomized number that's between 19-120 to start off the game
 
   $( document ).ready(function(){
     var Random=Math.floor(Math.random()*101+19)
     
     $('#randomNum').text(Random);
-    // Appending random number to the randomNum id in the html doc
-    //
+    // Appending random number to the randomNum id in the HTML doc
+   
+  
     var num1= Math.floor(Math.random()*11+1)
     var num2= Math.floor(Math.random()*11+1)
     var num3= Math.floor(Math.random()*11+1)
     var num4= Math.floor(Math.random()*11+1)
-    // Setting up random numbers for each jewel
-    // Random number has to be between 1 - 12
-    // 
-    var userTotal= 0; 
+    // This sets up the random numbers for each jewel and the random number has to be between 1-12
+
+    var gamerTotal= 0; 
     var wins= 0;
     var losses = 0;
-    //  Decaring variables for tallies
+    //  This sets the variables for the tally
+
   $('#numberWinning').text(wins);
   $('#numberLosses').text(losses);
-  //resets the game
+  // Resetting the game***
+  
   function reset(){
         Random=Math.floor(Math.random()*101+19);
         console.log(Random)
@@ -29,69 +30,71 @@
         num2= Math.floor(Math.random()*11+1);
         num3= Math.floor(Math.random()*11+1);
         num4= Math.floor(Math.random()*11+1);
-        userTotal= 0;
-        $('#finalTotal').text(userTotal);
+        gamerTotal= 0;
+        $('#finalTotal').text(gamerTotal);
         } 
-  //adds the wins to the userTotal
-  function yay(){
-  alert("You won!");
+  // add the wins to the gamerTotal
+
+  function awesome(){
+  alert("I guess you're good at guessing!");
     wins++; 
     $('#numberWinning').text(wins);
     reset();
   }
-  //addes the losses to the userTotal
-  function loser(){
-  alert ("You lose!");
+  // add the losses to the gamerTotal
+
+  function badGuess(){
+  alert ("I wouldn't play Blackjack if I were you!");
     losses++;
     $('#numberLosses').text(losses);
     reset()
   }
-  //sets up click for jewels
+  // sets up click for all the jewels
     $('#crystOne').on ('click', function(){
-      userTotal = userTotal + num1;
-      console.log("New userTotal= " + userTotal);
-      $('#finalTotal').text(userTotal); 
+      gamerTotal = gamerTotal + num1;
+      console.log("New gamerTotal= " + gamerTotal);
+      $('#finalTotal').text(gamerTotal); 
             //sets win/lose conditions
-          if (userTotal == Random){
-            yay();
+          if (gamerTotal == Random){
+            awesome();
           }
-          else if ( userTotal > Random){
-            loser();
+          else if (gamerTotal > Random){
+            badGuess();
           }   
     })  
     $('#crystTwo').on ('click', function(){
-      userTotal = userTotal + num2;
-      console.log("New userTotal= " + userTotal);
-      $('#finalTotal').text(userTotal); 
-          if (userTotal == Random){
-            yay();
+      gamerTotal = gamerTotal + num2;
+      console.log("New gamerTotal= " + gamerTotal);
+      $('#finalTotal').text(gamerTotal); 
+          if (gamerTotal == Random){
+            awesome();
           }
-          else if ( userTotal > Random){
-            loser();
+          else if (gamerTotal > Random){
+            badGuess();
           } 
     })  
     $('#crystThree').on ('click', function(){
-      userTotal = userTotal + num3;
-      console.log("New userTotal= " + userTotal);
-      $('#finalTotal').text(userTotal);
+      gamerTotal = gamerTotal + num3;
+      console.log("New gamerTotal= " + gamerTotal);
+      $('#finalTotal').text(gamerTotal);
   //sets win/lose conditions
-            if (userTotal == Random){
-            yay();
+            if (gamerTotal == Random){
+            awesome();
           }
-          else if ( userTotal > Random){
-            loser();
+          else if (gamerTotal > Random){
+            badGuess();
           } 
     })  
     $('#crystFour').on ('click', function(){
-      userTotal = userTotal + num4;
-      console.log("New userTotal= " + userTotal);
-      $('#finalTotal').text(userTotal); 
+      gamerTotal = gamerTotal + num4;
+      console.log("New gamerTotal= " + gamerTotal);
+      $('#finalTotal').text(gamerTotal); 
         
-            if (userTotal == Random){
-            yay();
+            if (gamerTotal == Random){
+            awesome();
           }
-          else if ( userTotal > Random){
-            loser();
+          else if (gamerTotal > Random){
+            badGuess();
           }
     });   
   }); 
